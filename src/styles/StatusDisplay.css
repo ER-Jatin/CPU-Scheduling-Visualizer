@@ -1,0 +1,134 @@
+.current-status-container {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.current-time-display {
+  background-color: #f7fafc;
+  padding: 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.time-counter {
+  font-size: 1.125rem;
+  font-family: monospace;
+}
+
+.algorithm-name {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.running-process {
+  margin-top: 0.5rem;
+}
+
+.process-status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #c6f6d5;
+  border: 1px solid #9ae6b4;
+  border-radius: 0.5rem;
+}
+
+.running-process-name {
+  color: #2f855a;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.gear-icon {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.process-details {
+  color: #38a169;
+  font-size: 0.875rem;
+}
+
+.idle-status {
+  color: #718096;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.next-process-container {
+  background-color: #f7fafc;
+  padding: 0.75rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.next-process-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.next-processes {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.next-process {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+
+.next-process-name {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.next-process-time {
+  font-size: 0.75rem;
+}
+
+.no-processes {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #718096;
+}
+
+/* Border colors */
+.border-blue-400 {
+  border-color: #63b3ed;
+}
+
+.border-green-400 {
+  border-color: #68d391;
+}
+
+.border-yellow-400 {
+  border-color: #f6e05e;
+}
+
+.border-purple-400 {
+  border-color: #b794f4;
+}
+
+.border-red-400 {
+  border-color: #fc8181;
+}
+
+.border-pink-400 {
+  border-color: #f687b3;
+}
+
+.border-indigo-400 {
+  border-color: #7f9cf5;
+}

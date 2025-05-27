@@ -1,0 +1,121 @@
+.statistics-container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+.statistics-header {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.statistics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem;
+  background-color: rgb(13, 10, 10);
+  border-radius: 0.375rem;
+  border-color: #040000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-label {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 0.5rem 0;
+}
+
+.stat-desc {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.algorithm-analysis {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: rgb(24, 1, 1);
+  border-left: 4px solid #3b82f6;
+  border-radius: 0.25rem;
+}
+
+.analysis-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.analysis-content {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  line-height: 1.5;
+} 
+
+.statistics-container {
+  background-color: #040000;
+  padding: 20px;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  border-color: #040000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.statistics-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.statistics-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.statistic-box {
+  background-color: rgb(166, 38, 38);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border-color: #040000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.statistic-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.statistic-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}

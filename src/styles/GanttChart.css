@@ -1,0 +1,144 @@
+.gantt-chart-container {
+  margin-bottom: 1.5rem;
+}
+
+.gantt-chart-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.gantt-chart {
+  position: relative;
+  height: 4rem;
+  background-color: #edf2f7;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 1px solid #cbd5e0;
+}
+
+.time-marker {
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #f56565;
+  z-index: 10;
+  transition: left 1s linear;
+}
+
+.time-marker-dot {
+  height: 1rem;
+  width: 1rem;
+  margin-left: -0.5rem;
+  background-color: #f56565;
+  border-radius: 9999px;
+}
+
+.time-marker-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e53e3e;
+  margin-left: -0.25rem;
+}
+
+.gantt-slot {
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid white;
+}
+
+.gantt-slot.completed {
+  opacity: 0.8;
+}
+
+.gantt-slot.future {
+  opacity: 0.5;
+}
+
+.gantt-slot.future.active {
+  opacity: 1;
+}
+
+.gantt-slot-label {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.gantt-time-labels {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #4a5568;
+  padding: 0 0.25rem;
+}
+
+.gantt-timeline {
+  margin-top: 0.5rem;
+  height: 0.25rem;
+  background-color: #cbd5e0;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.gantt-progress {
+  height: 100%;
+  background-color: #4299e1;
+  transition: width 1s linear;
+}
+
+.gantt-duration-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #4a5568;
+}
+
+/* Process colors */
+.bg-blue-400 {
+  background-color: #63b3ed;
+}
+
+.bg-green-400 {
+  background-color: #68d391;
+}
+
+.bg-yellow-400 {
+  background-color: #f6e05e;
+}
+
+.bg-purple-400 {
+  background-color: #b794f4;
+}
+
+.bg-red-400 {
+  background-color: #fc8181;
+}
+
+.bg-pink-400 {
+  background-color: #f687b3;
+}
+
+.bg-indigo-400 {
+  background-color: #7f9cf5;
+}

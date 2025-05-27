@@ -1,0 +1,151 @@
+.simulation-control {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.control-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.control-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.control-button:active {
+  transform: scale(0.98);
+}
+
+/* 🎨 Button States with Glow */
+.control-button.start {
+  background-color: #48bb78; /* green-500 */
+  box-shadow: 0 0 10px rgba(72, 187, 120, 0.5);
+}
+
+.control-button.start:hover {
+  background-color: #38a169; /* green-600 */
+  box-shadow: 0 0 12px rgba(56, 161, 105, 0.7);
+}
+
+.control-button.paused {
+  background-color: #ecc94b; /* yellow-500 */
+  box-shadow: 0 0 10px rgba(236, 201, 75, 0.5);
+}
+
+.control-button.paused:hover {
+  background-color: #d69e2e; /* yellow-600 */
+  box-shadow: 0 0 12px rgba(214, 158, 46, 0.7);
+}
+
+.control-button.reset {
+  background-color: #4299e1; /* blue-500 */
+  box-shadow: 0 0 10px rgba(66, 153, 225, 0.5);
+}
+
+.control-button.reset:hover {
+  background-color: #3182ce; /* blue-600 */
+  box-shadow: 0 0 12px rgba(49, 130, 206, 0.7);
+}
+
+.status-container {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.current-status {
+  background-color: #f7fafc; /* gray-100 */
+  padding: 1rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.time-display {
+  font-size: 1.125rem;
+  font-family: monospace;
+}
+
+.algorithm-display {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.running-process {
+  margin-top: 0.5rem;
+}
+
+.process-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #c6f6d5; /* green-100 */
+  border: 1px solid #9ae6b4; /* green-300 */
+  border-radius: 0.5rem;
+}
+
+.process-name {
+  color: #2f855a; /* green-700 */
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.process-details {
+  color: #38a169; /* green-600 */
+  font-size: 0.875rem;
+}
+
+.idle-status {
+  color: #718096; /* gray-500 */
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.next-processes {
+  background-color: #f7fafc; /* gray-50 */
+  padding: 0.75rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top: 1px solid #e2e8f0; /* gray-200 */
+}
+
+.next-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568; /* gray-600 */
+  margin-bottom: 0.25rem;
+}
+
+.process-preview {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.next-process {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+
+.next-process-name {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.next-process-time {
+  font-size: 0.75rem;
+}
+
+.no-processes {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #718096; /* gray-500 */
+}

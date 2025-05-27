@@ -1,0 +1,100 @@
+/* Main container */
+.algorithm-selector-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown container */
+.algorithm-dropdown,
+.time-quantum-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Labels */
+.selector-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+/* Select dropdown styling */
+.algorithm-select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 0.9rem;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  /* Custom arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px;
+  padding-right: 2rem;
+}
+
+/* Select hover/focus states */
+.algorithm-select:hover {
+  border-color: #adb5bd;
+}
+
+.algorithm-select:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 2px rgba(77, 171, 247, 0.3);
+}
+
+/* Disabled state */
+.algorithm-select:disabled {
+  background-color: #e9ecef;
+  color: #868e96;
+  cursor: not-allowed;
+}
+
+/* Time quantum input */
+.quantum-input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #212529;
+  transition: all 0.2s ease;
+  width: 80px;
+}
+
+.quantum-input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 2px rgba(77, 171, 247, 0.3);
+}
+
+.quantum-input:disabled {
+  background-color: #e9ecef;
+  color: #868e96;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .algorithm-selector-container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+  .time-quantum-input {
+    margin-left: 1rem;
+  }
+}

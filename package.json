@@ -1,4 +1,6 @@
+
 {
+  "homepage": "https://er-jatin.github.io/CPU-Scheduling-Visualizer",
   "name": "osproject",
   "version": "0.1.0",
   "private": true,
